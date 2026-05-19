@@ -1,15 +1,15 @@
 {
-  "version": "3.3.3",
-  "notes": "## Order-AI v3.3.3\n\n完整发布说明见仓库 `docs/V3.30_发布说明_对比V3.20.md`。\n\n**v3.3 新特性**：\n- WiX UpgradeCode → MSI 自动覆盖升级（直接装新版会先卸旧版，不用手动卸）\n- 用户数据迁到 %APPDATA%\\\\Order-AI\\\\ → 卸载只删程序，data / output / settlement_params 全部保留\n- 应用内\"检查更新\"按钮 → Tauri Updater 签名验证 + 自动下载安装\n\n**下载**：`Order-AI_<version>_x64_zh-CN.msi`（≈170MB）+ `latest.json`（updater manifest）\n\n**从 v3.2.x 升级**：MSI 自动覆盖。首次启动会自动迁移 install_dir 下的老数据到 %APPDATA%。",
-  "pub_date": "2026-05-19T07:42:45.528Z",
+  "version": "3.3.4",
+  "notes": "Order-AI v3.3.4 — Updater endpoint 改 raw URL 绕重定向链",
+  "pub_date": "2026-05-19T08:04:07Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSenpoNExXSXU1N2ZaMGQ2OFh1SzhZZWNCMnhrUlZNRkpUenl3am9STTU4aUw2ZEE0bmtTWk84dTF2aDIzUzJMZVFCazI0VmNwQVYyNjJBM0JsSlYrWmVZeUlFWExqUFE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5MTc2NTU1CWZpbGU6T3JkZXItQUlfMy4zLjNfeDY0X3poLUNOLm1zaQpLeExkU204dlhPSDhQR0xtN0J5TC9SRjVUWHprYk9lZVQzUElZZExnWEtFaC81YlFCR284cjlKM2dGWSsrQ2U4ZzB2aXU1V29WMkliSkw0RTZTZmVDQT09Cg==",
-      "url": "https://github.com/aidake/order-ai/releases/download/v3.3.3/Order-AI_3.3.3_x64_zh-CN.msi"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSenpoNExXSXU1N1RxMWY5SDlYYWhWSEJtcXlMbjRKb1Axb1JKZWpackZKdTg4WHcveTh0dFE0ejlrQU5IckdDQkhDYlArYU9WRkUrRElJNVdJbnUzeE9FOEN5SmVIZGdzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5MTc3Njk2CWZpbGU6T3JkZXItQUlfMy4zLjRfeDY0X3poLUNOLm1zaQpkT0JWRmtNcG1JREVrSGgyRE9weEVwWWNTVU1RaVVmaHZnek1VNUtBSHNyZGZnTlhWK3daVXpKVTN6OEk2MUlXUGhFbThXeW8vWUp2dTNBVEhVRmJDZz09Cg==",
+      "url": "https://github.com/aidake/order-ai-updates/releases/download/v3.3.4/Order-AI_3.3.4_x64_zh-CN.msi"
     },
     "windows-x86_64-msi": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSenpoNExXSXU1N2ZaMGQ2OFh1SzhZZWNCMnhrUlZNRkpUenl3am9STTU4aUw2ZEE0bmtTWk84dTF2aDIzUzJMZVFCazI0VmNwQVYyNjJBM0JsSlYrWmVZeUlFWExqUFE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5MTc2NTU1CWZpbGU6T3JkZXItQUlfMy4zLjNfeDY0X3poLUNOLm1zaQpLeExkU204dlhPSDhQR0xtN0J5TC9SRjVUWHprYk9lZVQzUElZZExnWEtFaC81YlFCR284cjlKM2dGWSsrQ2U4ZzB2aXU1V29WMkliSkw0RTZTZmVDQT09Cg==",
-      "url": "https://github.com/aidake/order-ai/releases/download/v3.3.3/Order-AI_3.3.3_x64_zh-CN.msi"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSenpoNExXSXU1N1RxMWY5SDlYYWhWSEJtcXlMbjRKb1Axb1JKZWpackZKdTg4WHcveTh0dFE0ejlrQU5IckdDQkhDYlArYU9WRkUrRElJNVdJbnUzeE9FOEN5SmVIZGdzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5MTc3Njk2CWZpbGU6T3JkZXItQUlfMy4zLjRfeDY0X3poLUNOLm1zaQpkT0JWRmtNcG1JREVrSGgyRE9weEVwWWNTVU1RaVVmaHZnek1VNUtBSHNyZGZnTlhWK3daVXpKVTN6OEk2MUlXUGhFbThXeW8vWUp2dTNBVEhVRmJDZz09Cg==",
+      "url": "https://github.com/aidake/order-ai-updates/releases/download/v3.3.4/Order-AI_3.3.4_x64_zh-CN.msi"
     }
   }
 }
