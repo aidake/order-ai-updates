@@ -1,44 +1,46 @@
 # Order-AI Updates
 
-Order-AI 跨境电商订单分析工具的公开发布仓库。**只放安装包 + 签名 + Tauri Updater manifest**，源码见 private [`aidake/order-ai`](https://github.com/aidake/order-ai)。
+Order-AI Windows 桌面安装包与 Tauri Updater 公开更新端点。
 
-## 📥 下载最新版
+本仓库只托管公开发布资产：
 
-➡️ **[去最新版 Release 页](https://github.com/aidake/order-ai-updates/releases/latest)**
+- Windows MSI 安装包
+- MSI 签名文件
+- `latest.json` updater manifest
 
-下载 `Order-AI_<version>_x64_zh-CN.msi` 双击安装即可：
+不在本仓库托管源码、内部文档、样本数据、业务输入、运行输出或用户数据。
 
-- Windows MSI 安装器（中文向导，约 170MB）
-- 自动检测旧版 → 静默卸 → 装新版（WiX UpgradeCode 升级链）
-- 用户数据 (`%APPDATA%\Order-AI\`) 卸载不删
-- 应用内"检查更新"按钮自动拉本仓 `latest.json` 升级
+## 下载最新版
 
-## 资源说明
+[打开最新版 Release 页](https://github.com/aidake/order-ai-updates/releases/latest)
 
-每个 Release 包含 3 个 asset：
+下载 `Order-AI_<version>_x64_zh-CN.msi` 后双击安装即可。
+
+## 在线升级
+
+应用内“检查更新”使用以下公开 manifest：
+
+`https://raw.githubusercontent.com/aidake/order-ai-updates/main/latest.json`
+
+Updater 会校验签名后再安装更新。
+
+## Release 资产
+
+每个 Release 只应包含：
 
 | 文件 | 用途 |
 |---|---|
 | `Order-AI_<version>_x64_zh-CN.msi` | Windows 安装包 |
-| `Order-AI_<version>_x64_zh-CN.msi.sig` | minisign 签名（防伪造） |
+| `Order-AI_<version>_x64_zh-CN.msi.sig` | 安装包签名 |
 | `latest.json` | Tauri Updater manifest |
 
-仓库根目录的 [`latest.json`](https://raw.githubusercontent.com/aidake/order-ai-updates/main/latest.json) 始终指向最新版（应用内"检查更新"按钮的 endpoint）。
+## 安全边界
 
-## 在线升级机制
+本公开仓库不应出现：
 
-应用启动后，顶栏右上"检查更新"按钮会：
+- API Key、token、password、secret、私钥或证书私钥
+- `.env`、`APIKEY.txt`、本机配置或用户目录路径
+- 订单、退款、拒付、日志、缓存、报表、样本 Excel、parquet 或数据库文件
+- 源码仓库内部路径、内部文档路径或私有仓库名称
 
-1. 拉 `https://raw.githubusercontent.com/aidake/order-ai-updates/main/latest.json`
-2. 比对版本号
-3. 有新版 → 弹"升级到 vX.Y.Z"按钮 → 下载 MSI → minisign 签名校验 → 自动重启升级
-
-签名公钥嵌入应用，私钥严管在 CI Secrets — 即使本仓被劫持，没私钥的人无法发布伪造更新。
-
-## 版本日志
-
-详见各 Release 的 release notes，或私库 `docs/V3.*_发布说明_*.md`。
-
----
-
-⚠️ 本仓只放 release artifacts，**不接受 PR / Issue**。Bug 报告 / 功能请求请去私库（仅 owner 团队可见）。
+如发现上述内容，应立即下架对应资产并轮换相关凭证。
