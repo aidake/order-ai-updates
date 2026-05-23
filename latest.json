@@ -1,15 +1,15 @@
 {
-  "version": "3.4.0",
-  "notes": "Order-AI v3.4.0 — 暗色模式实装 + GitHub 凭证清理",
-  "pub_date": "2026-05-19T08:32:38Z",
+  "version": "3.4.2",
+  "notes": "Order-AI v3.4.2: URL-heavy report sheets are split automatically; product and image links remain clickable.",
+  "pub_date": "2026-05-23T03:33:35.982Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSenpoNExXSXU1N1dwcWM2VkNOL2lOajJ6d1lRRDJYUDRtSXNRa2tsbHplbHpNN200MCs1Y3RMc2tJQ2IxdzgzdXBQdmxLN2d6NjRsOU8zcFo1SFVqa0JiTVZwU0pWdEFNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5MTc5NTAxCWZpbGU6T3JkZXItQUlfMy40LjBfeDY0X3poLUNOLm1zaQo1V1VKNVArRElOeHFQR2ZFSnlEM0xvUEZvT1VHNVlSTGtwdmtjdk5ZNXQxNmhEb2YwOWZYd3hWZUtSeHN0STl6K2dKT0xTa3NRekpOWXB3ZE1raVRCdz09Cg==",
-      "url": "https://github.com/aidake/order-ai-updates/releases/download/v3.4.0/Order-AI_3.4.0_x64_zh-CN.msi"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSenpoNExXSXU1N1ZLbEN6RVllVzVxb2VhUUw5YUdsZ1NEQnZZaU1jbG9ZUElrTnJIV2xwaGNoZmF2V2dpN1NjZVZJOFlXS0VJLzhiS0w3NzlRdVFKY1JRQS9vSzNzVXc0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5NTA3MjA3CWZpbGU6T3JkZXItQUlfMy40LjJfeDY0X3poLUNOLm1zaQptT2JLSHF6M3BXSzJieUpIRERGZzl5RkFtTC9zdmpYSTNDZnJKOFJJRG1MN0svamFVNXUydEJHbWdlcGRTQytwSGlzMVE0ZlN2SSs0cUxIcUNtR2lCdz09Cg==",
+      "url": "https://github.com/aidake/order-ai-updates/releases/download/v3.4.2/Order-AI_3.4.2_x64_zh-CN.msi"
     },
     "windows-x86_64-msi": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSenpoNExXSXU1N1dwcWM2VkNOL2lOajJ6d1lRRDJYUDRtSXNRa2tsbHplbHpNN200MCs1Y3RMc2tJQ2IxdzgzdXBQdmxLN2d6NjRsOU8zcFo1SFVqa0JiTVZwU0pWdEFNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5MTc5NTAxCWZpbGU6T3JkZXItQUlfMy40LjBfeDY0X3poLUNOLm1zaQo1V1VKNVArRElOeHFQR2ZFSnlEM0xvUEZvT1VHNVlSTGtwdmtjdk5ZNXQxNmhEb2YwOWZYd3hWZUtSeHN0STl6K2dKT0xTa3NRekpOWXB3ZE1raVRCdz09Cg==",
-      "url": "https://github.com/aidake/order-ai-updates/releases/download/v3.4.0/Order-AI_3.4.0_x64_zh-CN.msi"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSenpoNExXSXU1N1ZLbEN6RVllVzVxb2VhUUw5YUdsZ1NEQnZZaU1jbG9ZUElrTnJIV2xwaGNoZmF2V2dpN1NjZVZJOFlXS0VJLzhiS0w3NzlRdVFKY1JRQS9vSzNzVXc0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5NTA3MjA3CWZpbGU6T3JkZXItQUlfMy40LjJfeDY0X3poLUNOLm1zaQptT2JLSHF6M3BXSzJieUpIRERGZzl5RkFtTC9zdmpYSTNDZnJKOFJJRG1MN0svamFVNXUydEJHbWdlcGRTQytwSGlzMVE0ZlN2SSs0cUxIcUNtR2lCdz09Cg==",
+      "url": "https://github.com/aidake/order-ai-updates/releases/download/v3.4.2/Order-AI_3.4.2_x64_zh-CN.msi"
     }
   }
 }
